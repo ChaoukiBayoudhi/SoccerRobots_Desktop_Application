@@ -58,6 +58,7 @@
     <Compile Include="AddTeamForm.Designer.cs">
       <DependentUpon>AddTeamForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Team.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
