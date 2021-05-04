@@ -32,5 +32,12 @@ namespace SoccerRobots_Desktop_Application
             td.MdiParent = this;
             td.Show();
         }
+
+        private void addRobotToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RobotDashbord rd = new RobotDashbord();
+            rd.MdiParent = this;
+            rd.Show();
+        }
     }
 }

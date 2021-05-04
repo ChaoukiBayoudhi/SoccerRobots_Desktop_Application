@@ -68,6 +68,7 @@ namespace SoccerRobots_Desktop_Application
             this.addRobotToolStripMenuItem.Name = "addRobotToolStripMenuItem";
             this.addRobotToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addRobotToolStripMenuItem.Text = "Robot Dashbord";
+            this.addRobotToolStripMenuItem.Click += new System.EventHandler(this.addRobotToolStripMenuItem_Click);
             // 
             // matchsManagementToolStripMenuItem
             // 

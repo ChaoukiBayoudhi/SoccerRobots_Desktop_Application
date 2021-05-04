@@ -138,6 +138,7 @@ namespace SoccerRobots_Desktop_Application
             this.bt_AddRobot.TabIndex = 10;
             this.bt_AddRobot.Text = "Add Robot";
             this.bt_AddRobot.UseVisualStyleBackColor = false;
+            this.bt_AddRobot.Click += new System.EventHandler(this.bt_AddRobot_Click);
             // 
             // bt_Cancel
             // 
