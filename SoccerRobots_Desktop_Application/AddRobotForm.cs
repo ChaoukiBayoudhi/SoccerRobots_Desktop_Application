@@ -12,9 +12,27 @@ namespace SoccerRobots_Desktop_Application
 {
     public partial class AddRobotForm : Form
     {
+        private DataGridView dataGridView1;
+        private Robot robot1;
+
         public AddRobotForm()
         {
+            InitializeComponent();//initialize the graphic controls properties
+            //without calling this method you'll an empty Form
+        }
+
+        public AddRobotForm(DataGridView dataGridView1) //surcharge of the constructor
+        {
             InitializeComponent();
+            this.dataGridView1 = dataGridView1;
+        }
+
+        public AddRobotForm(Robot robot1, DataGridView dataGridView1)
+        {
+            InitializeComponent();
+
+            this.robot1 = robot1;
+            this.dataGridView1 = dataGridView1;
         }
     }
 }

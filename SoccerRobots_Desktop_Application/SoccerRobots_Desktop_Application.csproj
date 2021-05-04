@@ -58,6 +58,13 @@
     <Compile Include="AddTeamForm.Designer.cs">
       <DependentUpon>AddTeamForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Robot.cs" />
+    <Compile Include="RobotDashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RobotDashbord.Designer.cs">
+      <DependentUpon>RobotDashbord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Team.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -73,6 +80,9 @@
     <Compile Include="TeamDashbord.Designer.cs">
       <DependentUpon>TeamDashbord.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddRobotForm.resx">
+      <DependentUpon>AddRobotForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddTeamForm.resx">
       <DependentUpon>AddTeamForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,6 +98,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RobotDashbord.resx">
+      <DependentUpon>RobotDashbord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeamDashbord.resx">
       <DependentUpon>TeamDashbord.cs</DependentUpon>
     </EmbeddedResource>

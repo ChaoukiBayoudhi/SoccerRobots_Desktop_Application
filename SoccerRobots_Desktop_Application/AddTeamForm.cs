@@ -18,7 +18,7 @@ namespace SoccerRobots_Desktop_Application
         private SqlCommand cmd = new SqlCommand();
 
         private string Action;
-        private int LastIndex;
+        
 
         public  Team Team1 { get; set; }
         public DataGridView dataGridView1 { get; set; }
