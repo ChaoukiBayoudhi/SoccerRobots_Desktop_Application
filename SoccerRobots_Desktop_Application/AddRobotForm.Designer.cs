@@ -202,6 +202,7 @@ namespace SoccerRobots_Desktop_Application
             this.Controls.Add(this.groupBox1);
             this.Name = "AddRobotForm";
             this.Text = "AddRobotForm";
+            this.Load += new System.EventHandler(this.AddRobotForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

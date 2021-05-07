@@ -62,6 +62,7 @@ namespace SoccerRobots_Desktop_Application
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Find Robot";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // bt_Find
             // 
@@ -158,6 +159,7 @@ namespace SoccerRobots_Desktop_Application
             this.bt_DeleteRobot.TabIndex = 1;
             this.bt_DeleteRobot.Text = "Delete Robot";
             this.bt_DeleteRobot.UseVisualStyleBackColor = false;
+            this.bt_DeleteRobot.Click += new System.EventHandler(this.bt_DeleteRobot_Click);
             // 
             // bt_AddRobot
             // 
@@ -177,7 +179,7 @@ namespace SoccerRobots_Desktop_Application
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(51, 164);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(466, 271);
+            this.groupBox3.Size = new System.Drawing.Size(511, 271);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "List Of Robots";
@@ -185,9 +187,9 @@ namespace SoccerRobots_Desktop_Application
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(35, 31);
+            this.dataGridView1.Location = new System.Drawing.Point(19, 31);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(398, 219);
+            this.dataGridView1.Size = new System.Drawing.Size(474, 219);
             this.dataGridView1.TabIndex = 0;
             // 
             // RobotDashbord
@@ -200,6 +202,7 @@ namespace SoccerRobots_Desktop_Application
             this.Controls.Add(this.groupBox1);
             this.Name = "RobotDashbord";
             this.Text = "RobotDashbord";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RobotDashbord_FormClosing);
             this.Load += new System.EventHandler(this.RobotDashbord_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

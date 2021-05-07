@@ -62,6 +62,7 @@ namespace SoccerRobots_Desktop_Application
             this.robotsManagementToolStripMenuItem.Name = "robotsManagementToolStripMenuItem";
             this.robotsManagementToolStripMenuItem.Size = new System.Drawing.Size(130, 20);
             this.robotsManagementToolStripMenuItem.Text = "Robots Management";
+            this.robotsManagementToolStripMenuItem.Click += new System.EventHandler(this.robotsManagementToolStripMenuItem_Click);
             // 
             // addRobotToolStripMenuItem
             // 
@@ -88,14 +89,14 @@ namespace SoccerRobots_Desktop_Application
             // addTeamToolStripMenuItem
             // 
             this.addTeamToolStripMenuItem.Name = "addTeamToolStripMenuItem";
-            this.addTeamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addTeamToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.addTeamToolStripMenuItem.Text = "Add Team";
             this.addTeamToolStripMenuItem.Click += new System.EventHandler(this.addTeamToolStripMenuItem_Click);
             // 
             // showTeamsToolStripMenuItem
             // 
             this.showTeamsToolStripMenuItem.Name = "showTeamsToolStripMenuItem";
-            this.showTeamsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.showTeamsToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.showTeamsToolStripMenuItem.Text = "Team Dashbord";
             this.showTeamsToolStripMenuItem.Click += new System.EventHandler(this.showTeamsToolStripMenuItem_Click);
             // 

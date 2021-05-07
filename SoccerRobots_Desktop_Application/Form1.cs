@@ -39,5 +39,10 @@ namespace SoccerRobots_Desktop_Application
             rd.MdiParent = this;
             rd.Show();
         }
+
+        private void robotsManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
