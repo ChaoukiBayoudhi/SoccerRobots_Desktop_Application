@@ -30,11 +30,11 @@ namespace SoccerRobots_Desktop_Application
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt_value = new System.Windows.Forms.TextBox();
-            this.cmb_creteria = new System.Windows.Forms.ComboBox();
             this.bt_Find = new System.Windows.Forms.Button();
+            this.cmb_creteria = new System.Windows.Forms.ComboBox();
+            this.txt_value = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.bt_Cancel = new System.Windows.Forms.Button();
             this.bt_ModifyRobot = new System.Windows.Forms.Button();
@@ -63,30 +63,16 @@ namespace SoccerRobots_Desktop_Application
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Find Robot";
             // 
-            // label1
+            // bt_Find
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(271, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Value";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Creteria";
-            // 
-            // txt_value
-            // 
-            this.txt_value.Location = new System.Drawing.Point(347, 44);
-            this.txt_value.Name = "txt_value";
-            this.txt_value.Size = new System.Drawing.Size(100, 24);
-            this.txt_value.TabIndex = 2;
+            this.bt_Find.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.bt_Find.ForeColor = System.Drawing.Color.Tomato;
+            this.bt_Find.Location = new System.Drawing.Point(508, 38);
+            this.bt_Find.Name = "bt_Find";
+            this.bt_Find.Size = new System.Drawing.Size(107, 36);
+            this.bt_Find.TabIndex = 4;
+            this.bt_Find.Text = "Find";
+            this.bt_Find.UseVisualStyleBackColor = false;
             // 
             // cmb_creteria
             // 
@@ -100,16 +86,30 @@ namespace SoccerRobots_Desktop_Application
             this.cmb_creteria.Size = new System.Drawing.Size(121, 26);
             this.cmb_creteria.TabIndex = 3;
             // 
-            // bt_Find
+            // txt_value
             // 
-            this.bt_Find.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.bt_Find.ForeColor = System.Drawing.Color.Tomato;
-            this.bt_Find.Location = new System.Drawing.Point(508, 38);
-            this.bt_Find.Name = "bt_Find";
-            this.bt_Find.Size = new System.Drawing.Size(107, 36);
-            this.bt_Find.TabIndex = 4;
-            this.bt_Find.Text = "Find";
-            this.bt_Find.UseVisualStyleBackColor = false;
+            this.txt_value.Location = new System.Drawing.Point(347, 44);
+            this.txt_value.Name = "txt_value";
+            this.txt_value.Size = new System.Drawing.Size(100, 24);
+            this.txt_value.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(22, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 18);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Creteria";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(271, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Value";
             // 
             // groupBox2
             // 
@@ -200,6 +200,7 @@ namespace SoccerRobots_Desktop_Application
             this.Controls.Add(this.groupBox1);
             this.Name = "RobotDashbord";
             this.Text = "RobotDashbord";
+            this.Load += new System.EventHandler(this.RobotDashbord_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

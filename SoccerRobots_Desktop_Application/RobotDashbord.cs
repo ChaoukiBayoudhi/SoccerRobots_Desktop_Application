@@ -29,5 +29,10 @@ namespace SoccerRobots_Desktop_Application
             AddRobotForm ard = new AddRobotForm(Robot1,dataGridView1);
             ard.Show();
         }
+
+        private void RobotDashbord_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
