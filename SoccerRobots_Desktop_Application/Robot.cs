@@ -12,7 +12,7 @@
         //tow robots are equal if its have the same code
         //to compare objects we have to redefine (give an other definition) to Equals
 
-        public override bool Equals(object obj)
+        public override bool Equals(object obj)//Equals compare tow objects by reference(default case)
         {
             return obj is Robot robot &&
                    Code == robot.Code;

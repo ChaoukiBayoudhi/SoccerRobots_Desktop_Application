@@ -14,6 +14,7 @@ namespace SoccerRobots_Desktop_Application
     public partial class AddRobotForm : Form
     {
         private DataGridView dataGridView1;
+        private string Action;
         private Robot robot1;
 
         public AddRobotForm()
@@ -26,6 +27,7 @@ namespace SoccerRobots_Desktop_Application
         {
             InitializeComponent();
             this.dataGridView1 = dataGridView1;
+            Action = "Add";
         }
 
         public AddRobotForm(Robot robot1, DataGridView dataGridView1)
@@ -34,6 +36,7 @@ namespace SoccerRobots_Desktop_Application
 
             this.robot1 = robot1;
             this.dataGridView1 = dataGridView1;
+            Action = "Modify";
         }
 
         private void bt_AddRobot_Click(object sender, EventArgs e)

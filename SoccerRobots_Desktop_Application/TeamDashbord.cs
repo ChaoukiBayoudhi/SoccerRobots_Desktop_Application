@@ -87,6 +87,7 @@ namespace SoccerRobots_Desktop_Application
                     //Get[Type]("column_name" or index)
                     //with type could be Int32 if the column type is int
                     //String if the column type is String ....
+                    //Convert from DataReader To List of Teams
                     while (DR.Read())
                     {
                         Team t = new Team();
@@ -96,6 +97,7 @@ namespace SoccerRobots_Desktop_Application
                         lstTeams.Add(t);
 
                     }
+                    DR.Close();
                 }
             }
             catch (Exception ex)
