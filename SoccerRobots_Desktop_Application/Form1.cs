@@ -44,5 +44,12 @@ namespace SoccerRobots_Desktop_Application
         {
 
         }
+
+        private void matchsManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MatchDashBord mdb = new MatchDashBord();
+            mdb.MdiParent = this;
+            mdb.Show();
+        }
     }
 }
